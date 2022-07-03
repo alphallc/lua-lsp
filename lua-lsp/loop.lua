@@ -11,7 +11,7 @@ _G.Config = _G.Config or {
 	builtins = {"5_3"},
 	packagePath = {"./?.lua"},
 	debugMode = false,
-	_useNativeLuacheck = false -- underscore means "experimental" here
+	_useNativeLuacheck = true -- underscore means "experimental" here
 }
 _G.Shutdown = false
 _G.Initialized = _G.Initialized or false

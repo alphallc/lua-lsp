@@ -20,8 +20,7 @@ supports:
    ]],
 }
 dependencies = {
-	"lua >= 5.1, < 5.4",
-	"dkjson ~> 2.5",
+	"lua >= 5.1, < 5.5",
 	"lpeglabel ~> 1.6",
 	"inspect ~> 3.1"
 }
@@ -32,6 +31,7 @@ build = {
       ["lua-lsp.data.5_1"] = "lua-lsp/data/5_1.lua",
       ["lua-lsp.data.5_2"] = "lua-lsp/data/5_2.lua",
       ["lua-lsp.data.5_3"] = "lua-lsp/data/5_3.lua",
+      ["lua-lsp.data.5_4"] = "lua-lsp/data/5_4.lua",
       ["lua-lsp.data.love-completions"] = "lua-lsp/data/love-completions.lua",
       ["lua-lsp.data.luajit-2_0"] = "lua-lsp/data/luajit-2_0.lua",
       ["lua-lsp.data._test"] = "lua-lsp/data/_test.lua",
