@@ -1,6 +1,6 @@
 -- wrapper for lua implementations
-local ok, maybe_cjson = pcall(require, 'cjson')
-if ok then
+local ok_cj, maybe_cjson = pcall(require, 'cjson')
+if ok_cj then
 	local cjson = maybe_cjson
 	cjson.decode_array_with_array_mt(true)
 	function cjson.array(t)
@@ -13,6 +13,13 @@ if ok then
 	end
 	return cjson
 end
+
+local ok_dk, maybe_dkjson = pcall(require, 'dkjson')
+if ok_dk then
+  -- Trying to load external dkjson if available
+  return maybe_dkjson
+end
+-- Giving up, and using hardcoded dkjson...
 
 -- all lines below this come from dkjson 2.5, inlining to use in lua 5.4
 
